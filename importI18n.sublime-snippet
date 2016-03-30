@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+import { addMessages, translate as _l } from 'lib/I18n';
+]]></content>
+    <tabTrigger>ii18</tabTrigger>
+    <scope>source.js</scope>
+    <description>import i18n</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+const ${1:css} = oxygenCss({
+  root: {
+    ${2:display}: ${3:'block'},
+  }
+});
+]]></content>
+    <tabTrigger>oxy</tabTrigger>
+    <scope>source.js</scope>
+    <description>oxygenCss</description>
+</snippet>

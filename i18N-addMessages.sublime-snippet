@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+
+addMessages({
+  ['en-US']: {
+    '${1:Translatable}': '${2:Translated}',
+  }
+});
+
+
+]]></content>
+    <tabTrigger>am</tabTrigger>
+    <scope>source.js</scope>
+    <description>addMessages</description>
+</snippet>

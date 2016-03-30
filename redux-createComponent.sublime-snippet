@@ -1,0 +1,39 @@
+<snippet>
+    <content><![CDATA[
+import React, { Component, PropTypes } from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as ${2:action}Actions from 'reducers/${2:action}Reducer';
+
+class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Component {
+  static propTypes = {
+    ${3:prop}: PropTypes.${4:string},
+  };
+
+  render() {
+    return (
+      ${0:<div />}
+    );
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    dispatch,
+    ${5:action}: bindActionCreators(${2:actions}Actions.${5:action}, dispatch),
+  };
+}
+
+function mapStateToProps(state) {
+  return {
+    ${6:subState}: state.${6:subState},
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}});
+
+]]></content>
+    <tabTrigger>rrcc</tabTrigger>
+    <scope>source.js</scope>
+    <description>React+redux: component skeleton</description>
+</snippet>
