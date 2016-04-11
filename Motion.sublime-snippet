@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+<Motion style={{ ${1:progress}: spring($2) }}>
+  {interpolated => {
+    ${3}
+  }}
+</Motion>
+]]></content>
+    <tabTrigger>Motion</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: React-Motion</description>
+</snippet>
