@@ -1,0 +1,38 @@
+<snippet>
+    <content><![CDATA[
+local addonName, ns = ...
+
+Neutrino:set()
+
+local ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = {
+
+}
+
+function ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}.new(blueprint, onCreate)
+  blueprint = setDefault(blueprint, {
+
+  })
+
+  local ${2:component} = {}
+
+
+  if onCreate then
+    onCreate(${2:component})
+  end
+  return ${2:component}
+end
+
+setmetatable(${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}, {
+  __call = function (_, ...)
+    return ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}.new(...)
+  end,
+})
+
+ns.${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
+
+export default ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}};
+]]></content>
+    <tabTrigger>neucc</tabTrigger>
+    <scope>source.lua</scope>
+    <description>Neutrino: component skeleton</description>
+</snippet>
