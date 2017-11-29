@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+state = {
+  ${1:key}: ${2:value},
+};
+]]></content>
+    <tabTrigger>st</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: state { ... }</description>
+</snippet>

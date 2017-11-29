@@ -1,0 +1,37 @@
+<snippet>
+    <content><![CDATA[
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+
+const css = oxygenCss({
+  root: {
+    position: 'relative',
+  },
+});
+
+export default class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Component {
+  static propTypes = {
+    children: PropTypes.node,
+    className: PropTypes.string,
+  };
+
+  render() {
+    const { children, className, ...other } = this.props;
+    const cn = classNames(css.root, className, {
+
+    });
+    return (
+      <div className={ cn } { ...other }>
+        {children}
+      </div>
+    );
+  }
+}
+
+
+]]></content>
+    <tabTrigger>rci</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: component skeleton</description>
+</snippet>

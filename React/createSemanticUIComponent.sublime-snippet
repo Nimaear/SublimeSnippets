@@ -1,0 +1,30 @@
+<snippet>
+    <content><![CDATA[
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { Segment } from 'semantic-ui-react';
+import { _l } from 'oxygen-i18n';
+
+addTranslations({
+  'en-US': {
+  },
+});
+
+export default class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Component {
+  static propTypes = {
+    children: PropTypes.node,
+  };
+
+  render() {
+    return (
+      <Segment>
+      </Segment>
+    );
+  }
+}
+
+]]></content>
+    <tabTrigger>rcs</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: Semantic ui element skeleton</description>
+</snippet>
