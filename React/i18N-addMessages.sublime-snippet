@@ -4,7 +4,7 @@
 addMessages({
   ['en-US']: {
     '${1:Translatable}': '${2:Translated}',
-  }
+  },
 });
 
 

@@ -3,7 +3,7 @@
 const ${1:css} = oxygenCss({
   root: {
     ${2:position}: ${3:'relative'},
-  }
+  },
 });
 ]]></content>
     <tabTrigger>oxy</tabTrigger>

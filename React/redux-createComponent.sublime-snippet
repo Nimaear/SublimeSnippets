@@ -7,7 +7,12 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as ${2:action}Actions from 'reducers/${2:action}Reducer';
 
-class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Component {
+@connect(state =({
+  ${6:subState}: state.${6:subState},  
+}), dispatch => ({
+  ${5:action}: bindActionCreators(${2:actions}Actions.${5:action}  
+}))
+export default class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Component {
   static propTypes = {
     ${3:children}: PropTypes.${4:node},
   };
@@ -18,21 +23,6 @@ class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Component {
     );
   }
 }
-
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch,
-    ${5:action}: bindActionCreators(${2:actions}Actions.${5:action}, dispatch),
-  };
-}
-
-function mapStateToProps(state) {
-  return {
-    ${6:subState}: state.${6:subState},
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}});
 
 ]]></content>
     <tabTrigger>rrcc</tabTrigger>

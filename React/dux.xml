@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as ${2:action}Actions from 'dux/entities/${2:action}';
+
+@connect(state =({
+  ${6:subState}: state.${6:subState},  
+}), dispatch => ({
+  ${5:action}: bindActionCreators(${2:actions}Actions.${5:action}  
+}))
+]]></content>
+    <tabTrigger>dux</tabTrigger>
+    <scope>source.js</scope>
+    <description>React+redux: component skeleton</description>
+</snippet>

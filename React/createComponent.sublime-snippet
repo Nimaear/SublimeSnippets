@@ -2,7 +2,7 @@
     <content><![CDATA[
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import cx from 'classnames';
 
 class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Component {
   static propTypes = {

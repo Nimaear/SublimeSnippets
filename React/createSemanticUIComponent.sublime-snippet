@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Segment } from 'semantic-ui-react';
-import { _l } from 'oxygen-i18n';
+import _l from 'oxygen-i18n';
 
 addTranslations({
   'en-US': {

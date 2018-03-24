@@ -2,7 +2,7 @@
     <content><![CDATA[
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import cx from 'classnames';
 
 const css = oxygenCss({
   root: {
@@ -18,7 +18,7 @@ export default class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Compone
 
   render() {
     const { children, className, ...other } = this.props;
-    const cn = classNames(css.root, className, {
+    const cn = cx(css.root, className, {
 
     });
     return (
