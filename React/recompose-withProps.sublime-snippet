@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+withProps(({ ${1:prop} }) => ({
+  ${2:prop2}: ${1:prop},
+}))$3
+]]></content>
+    <tabTrigger>withP</tabTrigger>
+    <scope>source.js</scope>
+    <description>Recompose: withProps</description>
+</snippet>

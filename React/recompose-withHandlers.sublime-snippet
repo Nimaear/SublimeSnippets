@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+withHandlers({
+  ${1:handler}: ({ ${2:prop} }) => (${3:arg}) => {
+    $4
+  },
+})$5
+]]></content>
+    <tabTrigger>withH</tabTrigger>
+    <scope>source.js</scope>
+    <description>Recompose: withHandlers</description>
+</snippet>

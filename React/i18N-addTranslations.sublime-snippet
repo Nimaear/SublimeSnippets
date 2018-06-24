@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+addTranslations({
+  'en-US': {
+    '${1:Translatable}': '${2:Translated}',
+  },
+});
+]]></content>
+    <tabTrigger>addT</tabTrigger>
+    <scope>source.js</scope>
+    <description>addTranslations</description>
+</snippet>

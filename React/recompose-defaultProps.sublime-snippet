@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+defaultProps({
+  ${1:key}: ${2:value},
+})$3
+]]></content>
+    <tabTrigger>defaultP</tabTrigger>
+    <scope>source.js</scope>
+    <description>Recompose: defaultProps { ... }</description>
+</snippet>

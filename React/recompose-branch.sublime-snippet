@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+branch(({ ${1:prop} }) => ${1:prop}, renderComponent(${2:Component}))$2
+]]></content>
+    <tabTrigger>branch</tabTrigger>
+    <scope>source.js</scope>
+    <description>Recompose: branch</description>
+</snippet>

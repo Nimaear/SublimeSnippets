@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+connect(
+  (state) => ({
+    ${1:prop}: state.${1:prop},
+  }),
+  {
+    ${2:action}: ${3:entity}Actions.${2:action},
+  }
+)$4
+]]></content>
+    <tabTrigger>connect</tabTrigger>
+    <scope>source.js</scope>
+    <description>Redux: connect</description>
+</snippet>
