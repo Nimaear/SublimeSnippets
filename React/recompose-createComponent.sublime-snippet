@@ -8,14 +8,14 @@ type PropsT = {
   ${2:prop}: ${3:string},
 };
 
-const ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}: PropsT} = ({ ${2:prop} }) => {
+const ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} = ({ ${2:prop} }: PropsT) => {
   return (
     ${4:<div />}
   );
 };
 
 export default compose(
-)(${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}();
+)(${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}});
 
 ]]></content>
     <tabTrigger>recomp</tabTrigger>
